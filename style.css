@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.widget-title {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bolder;
+  font-size: 40px;
+  padding-top: 15px;
+  margin-bottom: 50px;
+}
+.widget {
+  width: 80%;
+  margin: 0 auto 50px auto;
+  padding: 0 10px;
+}
+.product-container-1,
+.product-container-2,
+.product-container-3 {
+  text-align: center;
+  width: 100%;
+}
+.slick-slide {
+  padding: 5px 15px;
+}
+.product {
+  position: relative;
+  text-align: center;
+  background: #f9f9f9;
+  height: auto;
+  border-radius: 2px;
+  padding: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all .2s linear;
+}
+.product .info-container {
+  height: auto;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 50px;
+}
+.product .info-container .info-item {
+  text-align: center;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  left: 0;
+  top: 0;
+}
+.product .product-discount {
+  background: #cf1414;
+  color: white;
+}
+.product .product-isNew {
+  background: #1d1d1d;
+  color: white;
+}
+.product .product-likeCount {
+  color: #cf1414;
+  background: #fff;
+}
+.product .product-image {
+  position: relative;
+  display: inline-block;
+}
+.product .product-name {
+  position: relative;
+  display: block;
+  height: 70px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  margin: 20px 0 10px 0;
+}
+.product .props {
+  position: relative;
+  font-size: 12px;
+  height: 50px;
+  color: #979797;
+}
+.product .props .product-land,
+.product .props .product-region,
+.product .props .product-art {
+  display: inline-block;
+}
+.product .price {
+  text-align: center;
+  font-size: 16px;
+  margin: 15px 0;
+}
+.product .price .product-price {
+  display: inline-block;
+  font-weight: 600;
+}
+.product .price .product-price:not(:last-child) {
+  margin-right: 10px;
+}
+.product .price .product-oldPrice {
+  color: #979797;
+  text-decoration: line-through;
+  display: inline-block;
+}
+.product .product-basePrice {
+  font-size: 11px;
+  color: #979797;
+  margin-top: 20px;
+}
+.product:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+  .product-name {
+    font-size: 13px !important;
+  }
+  .price {
+    font-size: 13px !important;
+  }
+  .price .product-basePrice {
+    font-size: 12px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .widget-title {
+    font-size: 24px;
+  }
+}
